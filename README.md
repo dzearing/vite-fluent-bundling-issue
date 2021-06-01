@@ -70,5 +70,5 @@ var PivotBase = React67.forwardRef(function(props, ref) {
 
 This seems to be due to some issue in the [`vite:dep-pre-bundle` plugin](https://github.com/vitejs/vite/blob/6d602a0a4d2c1e77ded1344d59733eb93d4009c3/packages/vite/src/node/optimizer/esbuildDepPlugin.ts#L35), as running the following `esbuild` command does not produce the same issue:
 ```
-yarn esbuild ./node_modules/react ./node_modules/react-dom ./node_modules/@fluentui/react/lib/index.js ./node_modules/@fluentui/react/lib/Pivot.js --bundle --splitting --outdir=obj --format=esm --tree-shaking=ignore-annotations --metafile=meta.json --sourcemap
+yarn esbuild ./node_modules/react ./node_modules/react-dom ./node_modules/@fluentui/react/lib/index.js ./node_modules/@fluentui/react/lib/Pivot.js --bundle --splitting --outdir=obj --format=esm --tree-shaking=ignore-annotations --metafile=meta.json --sourcemap --define:process.env.NODE_ENV=\"development\"
 ```
