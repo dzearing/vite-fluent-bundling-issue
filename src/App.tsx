@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import "@fluentui/react/lib/Pivot";
+import "@fluentui/react/lib/index";
 import logo from './logo.svg'
 import './App.css'
 
