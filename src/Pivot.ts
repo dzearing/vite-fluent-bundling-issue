@@ -15,5 +15,5 @@
 export * from "@fluentui/react/lib/components/Pivot/Pivot";
 export { PivotItem } from "@fluentui/react/lib/components/Pivot/PivotItem";
 
-// Commenting this line out fixes the build. Also moving it to the top fixes.
+// Commenting this line out fixes the build. You can also move it above the Pivot export.
 export * from "@fluentui/react/lib/components/Pivot/Pivot.base";
